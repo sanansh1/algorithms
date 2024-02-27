@@ -1,4 +1,4 @@
-package org.example;
+package org.arrays.strings;
 
 import java.util.Map;
 import java.util.Stack;

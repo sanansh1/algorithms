@@ -1,4 +1,4 @@
-package org.example;
+package org.arrays.strings;
 
 public class BuySellStock {
 
