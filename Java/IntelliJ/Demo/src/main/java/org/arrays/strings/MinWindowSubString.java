@@ -5,7 +5,6 @@ import java.util.HashMap;
 public class MinWindowSubString {
     public static String minWindowSubstring(String s, String pattern) {
         HashMap<Character, Integer> map = new HashMap<>();
-
         for (char x : pattern.toCharArray()) {
             map.put(x, map.getOrDefault(x, 0) + 1);
         }
@@ -34,7 +33,7 @@ public class MinWindowSubString {
     }
 
     public static String minWindowSubstringBrute(String s, String pattern) {
-        
+        return null;
     }
 
     public static void main(String[] s) {
