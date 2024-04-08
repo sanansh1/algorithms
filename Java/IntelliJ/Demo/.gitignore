@@ -36,7 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/src/main/java/org/
+#/src/main/java/org/
 
 git mv /src/main/java/org/* .
 git mv /src/main/java/org/.* .
