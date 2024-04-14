@@ -37,7 +37,11 @@ public class MaxFrequencyElement {
     }
 
     public static void main(String[] s) {
+        System.out.println("3, 1, 8, 1, 3, 1, 4");
         int a = maxFrequencyElements(new int[]{3, 1, 8, 1, 3, 1, 4});
-        System.out.println(a);
+        System.out.println("Max frequency: " + a);
+        System.out.println("3, 1, 8, 1, 3, 1, 4");
+        int b = countMaxFrequencyElements(new int[]{3, 1, 8, 1, 3, 1, 4});
+        System.out.println("Count Max frequency: " + b);
     }
 }
