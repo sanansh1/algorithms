@@ -9,10 +9,7 @@ public class CombinationSum {
         if (index == arr.length) {
             //System.out.print(":" + index + ":" + target + ": ");
             if (target == 0) {
-                //System.out.println("ds:" + ds.size());
-                //ans.add(new ArrayList<Integer>());
-                ans.add(ds);
-                ds = new ArrayList<Integer>();
+                ans.add(new ArrayList<Integer>(ds));
             }
             return;
         }
@@ -36,12 +33,6 @@ public class CombinationSum {
         int[] arr = {2, 3, 6, 7};
         int target = 7;
         ArrayList<ArrayList<Integer>> ans = combSum(arr, target);
-        //ystem.out.println(ans.);
-        for (int i = 0; i < ans.size(); i++) {
-            for (int j = 0; j < ans.get(i).size(); j++) {
-                System.out.print(ans.get(i).get(j) + " ");
-            }
-            System.out.println();
-        }
+        System.out.println(ans);
     }
 }

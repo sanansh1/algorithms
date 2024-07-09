@@ -16,7 +16,7 @@ public class ClimbingStairs {
     }
 
     public static int countClimbingStairs(int ind, int[] dp) {
-        System.out.print(ind + ":");
+        //System.out.print(ind + ":");
         if (ind <= 1) {
             return 1;
         }

@@ -20,7 +20,7 @@ public class BuySellStock {
 
 
     public static void main(String[] s){
-    int maxProfit = maxProfit(new int[]{7,6,4,3,1});
+    int maxProfit = maxProfit(new int[]{7,9,2,3,10});
     System.out.println("Best time to buy sell stock - with maxprofit - "+maxProfit);
     }
 }

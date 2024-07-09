@@ -14,6 +14,7 @@ public class TopKFrequentElement {
             count.put(j, count.getOrDefault(j, 0) + 1);
         }
         PriorityQueue<Integer> pq = new PriorityQueue<>((n1, n2) -> count.get(n1) - count.get(n2));
+
         for (Map.Entry<Integer, Integer> element : count.entrySet()) {
             pq.add(element.getKey());
             if (pq.size() > k) {
@@ -21,7 +22,7 @@ public class TopKFrequentElement {
             }
         }
         int[] a = new int[pq.size()];
-        for (int i = k-1; i >=0; i--) {
+        for (int i = k - 1; i >= 0; i--) {
             a[i] = pq.poll();
         }
         return a;
